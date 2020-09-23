@@ -1,0 +1,34 @@
+
+<!--<div class="container">-->
+<!--	<div class="row" *ngFor="let task of tasks; let i = index">-->
+<!--		<span>{{ i+1 }}</span>-->
+<!--		<span>{{ task.title }}</span>-->
+<!--		<span>{{ task.startDate }}</span>-->
+<!--		<span>{{ task.endDate }}</span>-->
+<!--		<span>{{ task.status }}</span>-->
+<!--	</div>-->
+<!--</div>-->
+
+<table class="container">
+	<thead>
+		<tr>
+			<td style="width: 5%;">№</td>
+			<td style="width: 20%">Title</td>
+			<td style="width: 32.5%">Start Date</td>
+			<td style="width: 32.5%">End Date</td>
+			<td style="width: 32.5%">Status</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let task of tasks; let i=index;">
+			<td style="width: 5%">{{ i+1 }}</td>
+			<td style="width: 20%">{{ task.title }}</td>
+			<td style="width: 32.5%">{{ task.startDate }}</td>
+			<td style="width: 32.5%">{{ task.endDate }}</td>
+			<td style="width: 7%">{{ task.statusInfo }}</td>
+			<td style="width: 3%">
+				<input type="checkbox" [checked]="task.status" (change)="changeStatus(i)">
+			</td> 
+		</tr>
+	</tbody>
+</table>

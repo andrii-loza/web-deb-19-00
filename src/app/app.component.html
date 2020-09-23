@@ -1,0 +1,27 @@
+<div style="display: flex; flex-direction: row; justify-content: space-around">
+	<div style="width: 30%;">
+		<div *ngFor="let user of users" style="width: 70%; border: 1px solid black">
+			<h3>User</h3>
+			<span>{{ user.name }}</span>
+		</div>
+	</div>
+	
+	<div style="width: 30%;">
+		<div *ngFor="let todo of todos" style="width: 70%; border: 1px solid black">
+			<h3>Todo</h3>
+			<span>{{ todo.title }}</span>
+		</div>
+	</div>
+	
+</div>
+
+
+<!--todo component todo app-todo-->
+<!--ng g c  назва-->
+<!--todo-service todo.service-->
+<!--ng g s  назва-->
+<!--todo-service => getTodos() Promise-->
+
+<!--https://jsonplaceholder.typicode.com/todos-->
+
+<!--console.log(todos)-->
