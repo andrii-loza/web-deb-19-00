@@ -7,19 +7,20 @@ import {TodoService} from './services/todo.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   users: any[] = [];
   todos: any[] = [];
 
-  constructor(public userService: UserService,
-              public todoService: TodoService) {
+  constructor() {
+  // public userService: UserService,
+  //     public todoService: TodoService
   }
 
-  async ngOnInit() {
-    this.users = await this.userService.getUsers();
-    this.todos = await this.todoService.getTodos();
-    console.log('todos', this.todos);
-    console.log('users', this.users);
-  }
+  // async ngOnInit() {
+  //   this.users = await this.userService.getUsers();
+  //   this.todos = await this.todoService.getTodos();
+  //   console.log('todos', this.todos);
+  //   console.log('users', this.users);
+  // }
 
 }

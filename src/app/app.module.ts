@@ -7,6 +7,11 @@ import {FormsModule} from '@angular/forms';
 import { TaskComponent } from './task/task.component';
 import { UserComponent } from './components/user/user.component';
 import { TodoComponent } from './components/todo/todo.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { MarketComponent } from './components/market/market.component';
+import { MarketItemComponent } from './components/market-item/market-item.component';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -14,7 +19,12 @@ import { TodoComponent } from './components/todo/todo.component';
     AppComponent,
     TaskComponent,
     UserComponent,
-    TodoComponent
+    TodoComponent,
+    HomeComponent,
+    ContactsComponent,
+    NotFoundComponent,
+    MarketComponent,
+    MarketItemComponent
   ],
   imports: [
     BrowserModule,
