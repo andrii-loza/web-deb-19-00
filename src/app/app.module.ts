@@ -12,6 +12,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { MarketComponent } from './components/market/market.component';
 import { MarketItemComponent } from './components/market-item/market-item.component';
+import { BasketComponent } from './components/basket/basket.component';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MarketItemComponent } from './components/market-item/market-item.compon
     ContactsComponent,
     NotFoundComponent,
     MarketComponent,
-    MarketItemComponent
+    MarketItemComponent,
+    BasketComponent
   ],
   imports: [
     BrowserModule,
