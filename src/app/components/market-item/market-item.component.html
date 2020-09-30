@@ -1,6 +1,7 @@
-<div class="head">
+<div class="head" appProd [onSale]="product.onSale"> 
 	<span>Name: {{ product.name }}</span>
 	<span>Price: {{ product.price }}$ </span>
+	<span *ngIf="product.onSale">SALE*</span>
 	<br>
 	<span [style.visibility]="count > 0 ? 'visible' : 'hidden'">
 		Count: {{ count }} 

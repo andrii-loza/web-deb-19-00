@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {IBasketItem} from '../basket/basket.component';
 
 @Component({
   selector: 'app-market',
@@ -7,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MarketComponent implements OnInit {
 
-  products: any[] = [
+  products: IBasketItem[] = [
     {
       name: 'IPhone 7',
       price: 400
@@ -18,11 +19,13 @@ export class MarketComponent implements OnInit {
     },
     {
       name: 'IPhone 10',
-      price: 500
+      price: 500,
+      onSale: true
     },
     {
       name: 'Apple Watch 3',
-      price: 350
+      price: 350,
+      onSale: true
     },
     {
       name: 'Samsung Galaxy',

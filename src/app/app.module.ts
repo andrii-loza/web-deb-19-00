@@ -13,6 +13,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { MarketComponent } from './components/market/market.component';
 import { MarketItemComponent } from './components/market-item/market-item.component';
 import { BasketComponent } from './components/basket/basket.component';
+import { ProdDirective } from './directives/prod.directive';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -26,7 +27,8 @@ import { BasketComponent } from './components/basket/basket.component';
     NotFoundComponent,
     MarketComponent,
     MarketItemComponent,
-    BasketComponent
+    BasketComponent,
+    ProdDirective
   ],
   imports: [
     BrowserModule,
