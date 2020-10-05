@@ -6,6 +6,7 @@ import {HomeComponent} from './components/home/home.component';
 import {ContactsComponent} from './components/contacts/contacts.component';
 import {NotFoundComponent} from './components/not-found/not-found.component';
 import {MarketComponent} from './components/market/market.component';
+import {FormsComponent} from './components/forms/forms.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'market',
     component: MarketComponent
+  },
+  {
+    path: 'forms',
+    component: FormsComponent
   },
   {
     path: '**',

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { MarketComponent } from './components/market/market.component';
 import { MarketItemComponent } from './components/market-item/market-item.component';
 import { BasketComponent } from './components/basket/basket.component';
 import { ProdDirective } from './directives/prod.directive';
+import { FormsComponent } from './components/forms/forms.component';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -28,12 +30,14 @@ import { ProdDirective } from './directives/prod.directive';
     MarketComponent,
     MarketItemComponent,
     BasketComponent,
-    ProdDirective
+    ProdDirective,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule 
     // NgbModule 
   ],
   providers: [],
