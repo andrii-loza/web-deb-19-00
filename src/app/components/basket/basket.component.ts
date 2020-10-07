@@ -52,4 +52,5 @@ export interface IBasketItem {
   name: string;
   price: number;
   onSale?: boolean;
+  date: Date;
 }

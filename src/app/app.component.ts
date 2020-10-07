@@ -12,15 +12,13 @@ export class AppComponent {
   todos: any[] = [];
 
   constructor() {
-  // public userService: UserService,
-  //     public todoService: TodoService
-  }
+    localStorage.clear();
+    let user = {
+      name: 'andriy',
+      role: Math.random() >= 0.5 ? 'admin' : 'user'
+    }
 
-  // async ngOnInit() {
-  //   this.users = await this.userService.getUsers();
-  //   this.todos = await this.todoService.getTodos();
-  //   console.log('todos', this.todos);
-  //   console.log('users', this.users);
-  // }
+    localStorage.setItem('user', JSON.stringify(user));
+  } 
 
 }

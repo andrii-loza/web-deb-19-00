@@ -16,6 +16,8 @@ import { MarketItemComponent } from './components/market-item/market-item.compon
 import { BasketComponent } from './components/basket/basket.component';
 import { ProdDirective } from './directives/prod.directive';
 import { FormsComponent } from './components/forms/forms.component';
+import { CurrencyPipe } from './pipes/currency.pipe';
+import { AdminComponent } from './components/admin/admin.component';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -31,7 +33,9 @@ import { FormsComponent } from './components/forms/forms.component';
     MarketItemComponent,
     BasketComponent,
     ProdDirective,
-    FormsComponent
+    FormsComponent,
+    CurrencyPipe,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
